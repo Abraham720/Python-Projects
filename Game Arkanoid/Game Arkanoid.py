@@ -3,6 +3,8 @@ from random import randint
 from time import time
 pygame.init()
 
+#by abe boiii
+
 back = (0, 255, 255)
 mw = pygame.display.set_mode((500,500))
 mw.fill(back)
@@ -34,7 +36,7 @@ class Area():
 
 class Label(Area):
    def set_text(self, text, fsize=12, text_color=(0, 0, 0)):
-       self.image = pygame.font.SysFont('verdana', fsize).render(text, True, text_color)
+       self.image = pygame.font.SysFont('verdana', fsize).render(text, True, text_color) #yang buat siapa? braham ni bos
    def draw(self, shift_x=0, shift_y=0):
        self.fill()
        mw.blit(self.image, (self.rect.x + shift_x, self.rect.y + shift_y))
@@ -131,6 +133,8 @@ while not game_over:
     ball.draw()
     pygame.display.update()
     jam.tick(40)
+
+#by aku dungs, braham braham
 
 dx == 0
 dy == 0
